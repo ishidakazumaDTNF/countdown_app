@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N75-4X-GI0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="POCKC___.TTF">
+            <string>PocketCalculator</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_017_11_10" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ON6-8g-Syh">
+                                <rect key="frame" x="30" y="360" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wCR-qv-h1F">
+                                <rect key="frame" x="188" y="360" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="countDownLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5K-Ai-HI0">
+                                <rect key="frame" x="30" y="151" width="314" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PocketCalculator" family="Pocket Calculator" pointSize="47"/>
+                                <color key="textColor" red="0.27943566440000001" green="0.30438306929999998" blue="0.42754462360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Spf-Rb-apz">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="w6U-IE-7ZB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Sdh-0o-FMd">
+                                <rect key="frame" x="297" y="7" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="詳細設定"/>
+                                <connections>
+                                    <segue destination="Vi5-D7-jTr" kind="show" identifier="goSetting" id="2BJ-2d-BXx"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="countDownLabel" destination="H5K-Ai-HI0" id="U3n-7v-zLu"/>
+                        <outlet property="imageView" destination="ON6-8g-Syh" id="B2t-L1-grO"/>
+                        <outlet property="imageView2" destination="wCR-qv-h1F" id="sD6-Hw-dWt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="137.18140929535232"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="FrB-PA-m8O">
+            <objects>
+                <viewController id="Vi5-D7-jTr" customClass="secondViewController" customModule="_017_11_10" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XDl-Oc-C7J"/>
+                        <viewControllerLayoutGuide type="bottom" id="rt2-5C-1rs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IMW-qL-9Qx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8N-46-M2q">
+                                <rect key="frame" x="27.5" y="133" width="320" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="KFV-S1-ifg"/>
+                                    <constraint firstAttribute="width" constant="320" id="zWz-ZH-N3g"/>
+                                </constraints>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="カウントダウンの時間を指定して下さい▼" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agS-Kn-3fG">
+                                <rect key="frame" x="51" y="108" width="274" height="17"/>
+                                <color key="textColor" red="0.27943566440000001" green="0.30438306929999998" blue="0.42754462360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqX-O5-ebv">
+                                <rect key="frame" x="113" y="357" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="aCP-EU-rNH"/>
+                                    <constraint firstAttribute="height" constant="150" id="uDU-AA-Wg3"/>
+                                </constraints>
+                                <state key="normal" title="決定" image="done.png"/>
+                                <connections>
+                                    <action selector="gobuck:" destination="Vi5-D7-jTr" eventType="touchUpInside" id="BDH-aN-1dw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NqX-O5-ebv" firstAttribute="top" secondItem="X8N-46-M2q" secondAttribute="bottom" constant="8" id="62d-A4-G3d"/>
+                            <constraint firstItem="X8N-46-M2q" firstAttribute="top" secondItem="agS-Kn-3fG" secondAttribute="bottom" constant="8" id="EPu-1u-l0N"/>
+                            <constraint firstItem="agS-Kn-3fG" firstAttribute="top" secondItem="XDl-Oc-C7J" secondAttribute="bottom" constant="44" id="HIS-KM-VWV"/>
+                            <constraint firstItem="X8N-46-M2q" firstAttribute="top" secondItem="agS-Kn-3fG" secondAttribute="bottom" constant="8" symbolic="YES" id="O1i-kc-6BH"/>
+                            <constraint firstItem="NqX-O5-ebv" firstAttribute="top" secondItem="X8N-46-M2q" secondAttribute="bottom" constant="8" id="SqP-1j-mk9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="agS-Kn-3fG" secondAttribute="trailing" constant="34" id="UST-rU-Wc0"/>
+                            <constraint firstItem="X8N-46-M2q" firstAttribute="leading" secondItem="IMW-qL-9Qx" secondAttribute="leadingMargin" constant="11.5" id="WG3-MK-tNO"/>
+                            <constraint firstItem="rt2-5C-1rs" firstAttribute="top" secondItem="NqX-O5-ebv" secondAttribute="bottom" constant="160" id="bGs-JX-bVQ"/>
+                            <constraint firstItem="NqX-O5-ebv" firstAttribute="leading" secondItem="IMW-qL-9Qx" secondAttribute="leadingMargin" constant="97" id="eir-dp-nUy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NqX-O5-ebv" secondAttribute="trailing" constant="96" id="inY-8D-iqq"/>
+                            <constraint firstItem="agS-Kn-3fG" firstAttribute="centerX" secondItem="X8N-46-M2q" secondAttribute="centerX" id="l3e-Ng-NMN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X8N-46-M2q" secondAttribute="trailing" constant="11.5" id="mTM-Mo-aC9"/>
+                            <constraint firstItem="agS-Kn-3fG" firstAttribute="leading" secondItem="IMW-qL-9Qx" secondAttribute="leadingMargin" constant="35" id="rTl-P8-jQ1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgbutton" destination="NqX-O5-ebv" id="q69-7w-vRm"/>
+                        <outlet property="picker" destination="X8N-46-M2q" id="8ts-g0-zdX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yNT-Qc-A68" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="136.28185907046478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="de4-es-iHN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N75-4X-GI0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C68-m1-1N4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qqu-eR-ApU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wds-eM-SOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="done.png" width="526" height="526"/>
+    </resources>
+</document>
